@@ -5,8 +5,8 @@
 <ul>
   <li>Understanding Page Structure</li>
   <li>Python Packages needed</li>
-  requests
-  Beautiful Soup (bs4)
+  requests</br>
+  Beautiful Soup (bs4)</br>
   .
   .
 </ul>
