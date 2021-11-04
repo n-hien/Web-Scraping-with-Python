@@ -7,6 +7,7 @@
   <li>Python Packages needed</li>
   requests</br>
   Beautiful Soup (bs4)</br>
+  Selenium 
   .
   .
 </ul>
