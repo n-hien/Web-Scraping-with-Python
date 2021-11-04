@@ -4,7 +4,7 @@
 <h2>How to build a Python Web Scraper?</h2>
 <ul>
   <li>Understanding Page Structure</li>
-  <li>Python Packages needed</li>
+  <li>Python libraries needed</li>
   requests</br>
   Beautiful Soup (bs4)</br>
   Selenium 
