@@ -3,9 +3,9 @@ import requests
 import json
 
 #collect data
-url = "http://api.exchangeratesapi.io/v1/latest?base=EUR&access_key=yourkey"
-data = requests.get(url).text
-data = json.loads(data)     #using json library to convert string to dictionary
+url = "http://api.exchangeratesapi.io/v1/latest?base=EUR&access_key=912c60aef6cc1f9b7dd144660fe236ec"
+data = requests.get(url)
+data = data.json()
 data.keys()
 
 # Turn the data into a dataframe
