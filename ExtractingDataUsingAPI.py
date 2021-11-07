@@ -3,7 +3,7 @@ import requests
 import json
 
 #collect data
-url = "http://api.exchangeratesapi.io/v1/latest?base=EUR&access_key=912c60aef6cc1f9b7dd144660fe236ec"
+url = "http://api.exchangeratesapi.io/v1/latest?base=EUR&access_key=yourkey"
 data = requests.get(url)
 data = data.json()
 data.keys()
