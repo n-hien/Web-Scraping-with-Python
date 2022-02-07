@@ -1,0 +1,17 @@
+import pandas as pd 
+import requests
+from bs4 import BeautifulSoup
+
+url_cityDE = "https://de.wikipedia.org/wiki/Liste_der_St%C3%A4dte_in_Deutschland"
+header = {'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Mobile Safari/537.36 Edg/95.0.1020.44'}
+r = requests.get(url_cityDE, headers = header)
+content = r.content
+soup=BeautifulSoup(content,"html.parser")
+
+cityDE = pd.DataFrame(columns=['City'])
+
+for i in soup.find_all('dd'):
+    city = i.find('a').text.strip()
+    cityDE = cityDE.append({"City":city},ignore_index=True)
+    
+cityDE
